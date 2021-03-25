@@ -1,4 +1,7 @@
 /*
+
+REMEMBER TO ADD SOME ANIMATIONS TO SPOTIFY LOGO!
+
 Colors:
 
 Text: 1A1A1A
@@ -6,3 +9,212 @@ Green: #00B172
 White: #FFF
 
 */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Montserrat';
+}
+
+.img-logo img {
+    width: 180px;
+    margin: 10px 20px 10px 30px;
+}
+
+.img-logo img:hover {
+    animation: rotate;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+nav {
+    position: fixed;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    /* border: 1px solid black; */
+}
+
+ul {
+    margin-right: 20px;
+    width: 35%;
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: #1A1A1A;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.header-img {
+    width: 100%;
+    height: 600px;
+    background-image: url(/Users/stefanopisani/Desktop/March21/Module1/lab-css-spotify-clone/images/landing.jpg);
+    background-size: contain;
+    padding-top: 80px;
+    /* margin-top: -60px; */
+}
+
+.header-img h1 {
+    font-size: 4.5rem;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+
+}
+
+.header-img h2 {
+    font-size: 1.7rem;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+    margin: 0 350px;
+    font-weight: 300;
+    /* line-height: 450px; */
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.services h2 {
+    width: fit-content;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #1A1A1A;
+    border-bottom: 2px solid #00B172;
+    padding-bottom: 5px;
+    margin: 50px 0;
+}
+
+.spoti-services {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px 0 100px;
+}
+
+.service-spec {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    width: 250px;
+}
+
+.spoti-services img {
+    width: 120px;
+}
+
+.service-spec h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #00B172;
+}
+
+.service-spec p {
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-top: -5px;
+    color: #1A1A1A;
+}
+
+.kanye-west {
+    background-color: white;
+    /* border: 1px solid black; */
+    margin-top: -50px;
+    height: 900px;
+
+}
+
+.green-box {
+    background-color: #00B172;
+    height: 870px;
+    /* border: 1px solid black; */
+    margin: 30px;
+}
+
+.green-box-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.green-box h2 {
+    font-size: 2rem;
+    width: fit-content;
+    color: white;
+    margin: 0 0 20px 100px;
+    padding-top: 70px;
+    border-bottom: 3px solid white;
+    padding-bottom: 8px
+}
+
+.lefty {
+    width: 700px;
+    /* border: 1px solid black; */
+}
+
+.functions h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    margin: 50px 0 50px 100px;
+}
+
+.functions p {
+    font-size: 1.5rem;
+    color: white;
+    margin-left: 100px;
+}
+
+.center {
+    width: 500px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.center img {
+    width: 150px
+}
+
+.righty {
+    width: 700px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: -120px;
+}
+
+.righty img {
+    width: 350px;
+}
